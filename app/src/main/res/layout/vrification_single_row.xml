@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6F8D8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginTop="10dp"
+      app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/product_name41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Product Name"
+            android:textSize="25sp"
+            android:textColor="@color/purple_500"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/product_image42"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tshirts"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/product_name41"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/product_price43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Price"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple_500"
+            android:layout_below="@id/product_image42"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/prouct_desc44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="17sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/product_price43"
+            android:layout_marginBottom="10dp"/>
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#39A83E"
+           android:layout_centerHorizontal="true"
+            android:text="Approved"
+            android:layout_below="@id/prouct_desc44"
+            android:textSize="18sp"
+            android:visibility="visible"
+            android:id="@+id/product_verified_button45"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#ED1010"
+           android:layout_centerHorizontal="true"
+            android:text="Not Approved"
+            android:textSize="18sp"
+            android:layout_below="@id/prouct_desc44"
+            android:visibility="gone"
+            android:id="@+id/product_Notverified_button46"/>
+
+
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

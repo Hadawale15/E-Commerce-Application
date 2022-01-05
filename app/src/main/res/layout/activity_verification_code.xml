@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationCode">
+
+
+
+    <ImageView
+        android:id="@+id/I12"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/verify_phone"/>
+
+    <TextView
+        android:id="@+id/Te12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/I12"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/te12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP sent on mobile number "
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Te12"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_margin="15dp"
+           android:id="@+id/card12"
+           android:layout_below="@+id/te12">
+
+           <EditText
+               android:id="@+id/enter_otp_id"
+               android:layout_width="250dp"
+               android:layout_height="60dp"
+              android:layout_gravity="center_horizontal"
+               android:hint="enter otp"
+               android:layout_margin="10dp"
+               android:textSize="20sp"
+               android:background="@drawable/edittextbackground"
+              />
+
+
+
+       </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/next_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:layout_below="@+id/card12"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>

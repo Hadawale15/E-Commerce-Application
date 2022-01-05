@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sellers.CutomerDetailsForOrder">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="12dp">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="5dp">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Information"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/Customer_info_id01"/>
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Name"
+              android:layout_below="@+id/Customer_info_id01"
+              android:layout_marginTop="10dp"
+              android:textSize="20sp"
+              android:id="@+id/Customer_name_id02"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Name"
+              android:layout_below="@+id/Customer_name_id02"
+              android:layout_marginTop="10dp"
+              android:textSize="20sp"
+              android:id="@+id/Customer_add_id03"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Name"
+              android:layout_below="@+id/Customer_add_id03"
+              android:layout_marginTop="10dp"
+              android:textSize="20sp"
+              android:id="@+id/Customer_city_id04"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Name"
+              android:layout_below="@+id/Customer_city_id04"
+              android:layout_marginTop="10dp"
+              android:textSize="20sp"
+              android:id="@+id/Customer_pincode_id05"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Name"
+              android:layout_below="@+id/Customer_pincode_id05"
+              android:layout_marginTop="10dp"
+              android:textSize="20sp"
+              android:id="@+id/Customer_mobile_id06"
+              android:layout_marginBottom="10dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Customer Name"
+              android:layout_below="@+id/Customer_mobile_id06"
+              android:layout_marginTop="10dp"
+              android:textSize="20sp"
+              android:id="@+id/Customer_RegisterMobile_id07"
+              android:layout_marginBottom="10dp"/>
+
+
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Reached"
+              android:textSize="20sp"
+              android:layout_below="@+id/Customer_RegisterMobile_id07"
+              android:layout_margin="20dp"
+              android:id="@+id/Product_reached_id08"/>
+
+
+
+
+
+
+      </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

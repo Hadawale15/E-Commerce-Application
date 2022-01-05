@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332F2F"
+    tools:context=".AdminSection.AdminOptionPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Admin Section"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tt1"
+        android:id="@+id/admin_view_order_id">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBC02D">
+
+            <TextView
+                android:id="@+id/viewOrd_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="View Order"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+              android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/admin_add_product_id"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/admin_view_order_id">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#19C621">
+
+            <TextView
+                android:id="@+id/checkAndApproveProduct_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Check And Approve Product"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/admin_Maintain_Product_id"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:cardCornerRadius="25dp"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/admin_add_product_id">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D32F2F">
+
+                <TextView
+                    android:id="@+id/maintain_product_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Maintain Product"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/admin_logout_id"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/admin_Maintain_Product_id">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#259FE1">
+
+            <TextView
+                android:id="@+id/logoutAd_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Logout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

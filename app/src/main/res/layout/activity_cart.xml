@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrontSection.CartActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/purple_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Cart"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/l1"
+        android:id="@+id/Cart_recycle_id"
+        android:background="#CCE6F4"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EBF3F8">
+
+            <Button
+                android:id="@+id/Cart_next_Buttonm_id"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Next"
+                android:textSize="22sp"
+                android:background="@drawable/button_beckground1"/>
+
+            <TextView
+                android:id="@+id/Cart_total_amount_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prize"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#151313"
+                android:layout_marginLeft="20dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+ <TextView
+     android:drawableTop="@drawable/thumb_icon"
+     android:id="@+id/order_status_id"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Congratulation,Your order had been placed Successfully,Soon it will be Verified. "
+     android:layout_centerVertical="true"
+     android:textSize="25sp"
+     android:layout_margin="20dp"
+     android:visibility="gone"
+    />
+
+
+
+
+</RelativeLayout>

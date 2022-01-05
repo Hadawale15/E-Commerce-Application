@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Seller_navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/Seller_navigation_Add"
+        android:icon="@drawable/add"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/Seller_navigation_orders"
+        android:icon="@drawable/orders"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/Seller_navigation_Logout"
+        android:icon="@drawable/logout"
+        android:title="LogOut" />
+
+</menu>

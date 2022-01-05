@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shoppingback3"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/firstpagelogo"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:text="Sign Up!"
+        android:textSize="40sp"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <EditText
+        android:id="@+id/Register_username_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textSize="20sp"
+        android:padding="7dp"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="10dp"
+         android:layout_below="@+id/image_id"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_background2"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColorHint="@color/purple_500"
+        android:textColor="@color/purple_500"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/Register_mobile_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Mobile Number"
+        android:textSize="20sp"
+        android:padding="7dp"
+        android:layout_below="@+id/Register_username_id"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background2"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColorHint="@color/purple_500"
+        android:textColor="@color/purple_500"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/Register_Email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email"
+        android:textSize="20sp"
+        android:padding="7dp"
+        android:drawableLeft="@drawable/register_email_icon"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/Register_mobile_id"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background2"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColorHint="@color/purple_500"
+        android:textColor="@color/purple_500"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/Register_pass1_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:textSize="20sp"
+        android:padding="7dp"
+        android:layout_below="@+id/Register_Email_id"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background2"
+        android:drawableLeft="@drawable/paassword_icon"
+        android:drawablePadding="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/purple_500"
+        android:inputType="textWebPassword"/>
+
+    <EditText
+        android:id="@+id/Register_pass2_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="confirm Password"
+        android:textSize="20sp"
+        android:padding="7dp"
+        android:layout_below="@+id/Register_pass1_id"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background2"
+        android:drawableLeft="@drawable/paassword_icon"
+        android:drawablePadding="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColorHint="@color/purple_500"
+        android:textColor="@color/purple_500"
+        android:inputType="textWebPassword"/>
+
+
+    <Button
+        android:id="@+id/createAcc_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/button_beckground1"
+        android:layout_marginStart="12dp"
+        android:padding="9dp"
+        android:layout_below="@+id/Register_pass2_id"
+        android:layout_marginTop="15dp"/>
+
+
+</RelativeLayout>

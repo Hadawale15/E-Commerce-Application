@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sellers.SellerLogin"
+    android:background="#EDF6E6">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/sellerlogin"
+        android:id="@+id/seller_Image21" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card31"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/seller_Image21"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sellers Login"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#599127"
+        android:id="@+id/Seller_Text32"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email"
+        android:layout_below="@+id/Seller_Text32"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/email_icon"
+       android:drawablePadding="10dp"
+        android:background="@drawable/selleredittextback"
+        android:id="@+id/Email_edittext33"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:layout_below="@+id/Email_edittext33"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+       android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:background="@drawable/selleredittextback"
+        android:padding="15dp"
+        android:id="@+id/password_edittext34"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/card31"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Login"
+        android:textSize="15sp"
+        android:padding="9dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#599127"
+
+        android:id="@+id/Seller_login_button35_id"/>
+
+
+
+
+
+</RelativeLayout>

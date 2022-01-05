@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_500">
+
+
+            <TextView
+                android:id="@+id/Admin_new_orderl_ayout_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Admin_new_order_layout_mobile_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mobile"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Admin_new_orderl_ayout_name_id"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/Admin_new_order_layout_address_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Admin_new_order_layout_mobile_id"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/Admin_new_order_layout_pin_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pin code"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Admin_new_order_layout_address_id"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/Admin_new_order_date__id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Admin_new_order_layout_pin_id"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/Admin_new_order_layout_price_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Admin_new_order_date__id"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Admin_ordered_product_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show this order products"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"
+                android:layout_below="@+id/Admin_new_order_layout_price_id"
+                android:layout_marginTop="10dp"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:textSize="17sp"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
